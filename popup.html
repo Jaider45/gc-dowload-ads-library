@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GC Download Ads Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Fuente de texto */
+            background-color: white; /* Color de fondo */
+            margin: 0; /* Sin margen */
+            text-align: center; /* Texto centrado */
+        }
+        .container {
+            width: 400px; /* Ancho del contenedor */
+            max-width: 600px; /* Ancho máximo del contenedor */
+            margin: 0 auto; /* Centrar el contenedor */
+            padding: 5px; /* Añadir padding para mejor apariencia */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añadir sombra para mejor apariencia */
+            border-radius: 10px; /* Añadir borde redondeado */
+        }
+        img {
+            display: block; /* Mostrar como bloque */
+            margin: 10px auto 10px; /* Margen superior e inferior de 10px, centrado horizontalmente */
+            width: 30%; /* Reducir el tamaño de la imagen al 30% */
+        }
+        h1 {
+            font-size: 20px; /* Tamaño de la fuente */
+            margin-bottom: 10px; /* Margen inferior */
+        }
+        p {
+            font-size: 14px; /* Tamaño de la fuente */
+            margin-bottom: 20px; /* Margen inferior */
+            margin-top: 1px; /* Margen superior */
+        }
+        .instructions {
+            font-size: 12px; /* Tamaño de la fuente */
+            color: #000000; /* Color del texto */
+            text-align: center; /* Texto centrado */
+        }
+        .instructions p {
+            margin: 5px 10px 0; /* Margen superior de 5px, margen lateral de 10px, sin margen inferior */
+            text-align: left; /* Texto alineado a la izquierda */
+        }
+        .social {
+            margin-top: 20px; /* Margen superior */
+        }
+        .social h2 {
+            font-size: 16px; /* Tamaño de la fuente */
+            margin-bottom: 10px; /* Margen inferior */
+        }
+        .social a {
+            margin: 0 10px; /* Margen lateral de 10px */
+            text-decoration: none; /* Sin subrayado */
+            color: #2196F3; /* Color del texto */
+            font-size: 24px; /* Tamaño de la fuente */
+        }
+        .footer {
+            margin-top: 10px; /* Margen superior */
+            font-size: 12px; /* Tamaño de la fuente */
+            color: #555; /* Color del texto */
+        }
+        .footer p {
+            margin-bottom: 5px; /* Margen inferior */
+        }
+        .switch {
+            position: relative; /* Posición relativa */
+            display: inline-block; /* Mostrar como bloque en línea */
+            width: 60px; /* Ancho */
+            height: 34px; /* Altura */
+        }
+        .switch input {
+            opacity: 0; /* Hacer invisible */
+            width: 0; /* Ancho 0 */
+            height: 0; /* Altura 0 */
+        }
+        .slider {
+            position: absolute; /* Posición absoluta */
+            cursor: pointer; /* Cambiar cursor a puntero */
+            top: 0; /* Posición superior */
+            left: 0; /* Posición izquierda */
+            right: 0; /* Posición derecha */
+            bottom: 0; /* Posición inferior */
+            background-color: #ccc; /* Color de fondo */
+            transition: .4s; /* Transición de 0.4 segundos */
+            border-radius: 34px; /* Bordes redondeados */
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/img/logo.png" alt="Logo" id="image">
+        <h1>Bienvenidos</h1>
+        <p>Esta extensión te permite <b>descargar anuncios de la biblioteca de Meta Ads</b> con un solo clic. ¡Facilita tu investigación de anuncios y ahorra tiempo!</p>
+        <div class="instructions">
+            <h2>Instrucciones</h2>
+            <p><b>Paso 1:</b> Navega a la biblioteca de anuncios</p>
+            <p><b>Paso 2:</b> Haz clic en el botón de descarga.</p>
+            <p><b>Paso 3:</b> Agrega el nombre que quieres colocarle al anuncio</p>
+            <p><b>Paso 4:</b> Espera a que termine la descarga y puedes buscarlo en el directorio de descarga definido para Chrome.</p>
+        </div>
+        <div class="social">
+            <h2>Síguenos en</h2>
+            <a href="https://www.instagram.com/gisellcopy" target="_blank"><i class="fa-brands fa-instagram" style="color: #4d2272;"></i></a>
+            <a href="https://www.gisellcopy.com" target="_blank"><i class="fas fa-globe" style="color: #4d2272;"></i></a>
+        </div>
+        <div class="footer">
+            <p>Derechos reservados por GisellCopy ❤</p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
