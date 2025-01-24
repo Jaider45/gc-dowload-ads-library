@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "GC Download Ads Library",
+    "version": "1.2.1",
+    "description": "Esta extensión te permite descargar anuncios de la biblioteca de Meta Ads con un solo clic. ¡Facilita tu investigación de anuncios y ahorra tiempo!",
+    "permissions": [
+      "activeTab", 
+      "storage" 
+    ],
+    "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/ads/library/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+"icons": {
+    "16": "/img/icon16x16.png",
+    "48": "/img/icon48x48.png",
+    "128": "/img/icon128x128.png"
+  },
+  "author": "GisellCopy",
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
